@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Start PostgreSQL server using Homebrew
+# Starts the PostgreSQL server and configures it to run as a background service
+brew services start postgresql
+
