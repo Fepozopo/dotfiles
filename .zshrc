@@ -102,10 +102,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Add a shortcut for dotfiles bare repo
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# Automatically add the verbose flag to commands
 alias rm="rm -v"
 alias cp="cp -v"
 alias mv="mv -v"
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# Create a directory and cd into it
+mkcd() {
+    mkdir -p "${1}"
+    cd "${1}"
+}
 
 export PATH=$PATH:$HOME/go/bin
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
