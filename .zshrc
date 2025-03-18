@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Exports
+export PATH=$PATH:$HOME/go/bin
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
 # Add a shortcut for dotfiles bare repo
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
@@ -111,14 +115,14 @@ alias rm="rm -v"
 alias cp="cp -v"
 alias mv="mv -v"
 
+# Alias ls to lsd
+alias ls="lsd"
+
 # Create a directory and cd into it
 mkcd() {
     mkdir -p "${1}"
     cd "${1}"
 }
-
-export PATH=$PATH:$HOME/go/bin
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 
 # Shell wraper that provides the ability to change the current working
 # directory when wxiting Yazi
