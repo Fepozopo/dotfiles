@@ -1,0 +1,60 @@
+#!/bin/bash
+# This is the wrapper script
+
+# Function to display usage information
+usage() {
+    echo "Usage: $0 <folder_name>/<script_name> or $0 lst"
+    echo "Run the specified script located in the given folder or list directory contents."
+    exit 1
+}
+
+# Get the directory of the script
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+
+# Check if exactly one argument is provided
+if [ $# -ne 1 ]; then
+    echo "Error: Exactly one argument must be provided."
+    usage
+fi
+
+# Get the argument
+arg="$1"
+
+# Check if the argument is 'lst'
+if [ "$arg" == "list" ]; then
+    # Run the 'lsd --tree' command on the script directory
+    lsd --tree "$script_dir"
+    exit_status=$?
+    if [ $exit_status -ne 0 ]; then
+        echo "Error: 'list' command exited with status $exit_status."
+        exit $exit_status
+    fi
+    exit 0
+fi
+
+# Get the folder and script name from the argument
+script_path="$arg"
+
+# Construct the full path to the script
+script_full_path="$script_dir/$script_path"
+
+# Check if the specified script exists and is executable
+if [ ! -x "$script_full_path" ]; then
+    echo "Error: Script '$script_full_path' not found or not executable."
+    exit 1
+fi
+
+# Run the specified script
+"$script_full_path"
+
+# Capture the exit status of the script
+exit_status=$?
+
+# Check if the script ran successfully
+if [ $exit_status -ne 0 ]; then
+    echo "Error: Script '$script_full_path' exited with status $exit_status."
+    exit $exit_status
+fi
+
+# If everything went well, exit with a success status
+exit 0

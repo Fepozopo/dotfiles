@@ -106,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # Exports
 export PATH=$PATH:$HOME/go/bin
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+# Export for custom scripts
+export PATH="$HOME/Developer/scripts:$PATH"
 
 # Add a shortcut for dotfiles bare repo
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
