@@ -115,8 +115,9 @@ alias rm="rm -v"
 alias cp="cp -v"
 alias mv="mv -v"
 
-# Alias ls to lsd
+# Aliases for ls
 alias ls="lsd"
+alias lst="lsd --tree"
 
 # Create a directory and cd into it
 mkcd() {
