@@ -21,7 +21,7 @@ fi
 arg="$1"
 
 # Check if the argument is 'lst'
-if [ "$arg" == "list" ]; then
+if [ "$arg" == "lst" ]; then
     # Run the 'lsd --tree' command on the script directory
     lsd --tree "$script_dir"
     exit_status=$?
