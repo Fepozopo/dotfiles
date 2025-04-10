@@ -124,6 +124,9 @@ alias lst="lsd --tree"
 # Alias to default Visual Studio Code Insiders
 alias code="code-insiders"
 
+# Miscellaneous aliases
+alias top="btop"
+
 # Create a directory and cd into it
 mkcd() {
     mkdir -p "${1}"
