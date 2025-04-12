@@ -133,6 +133,12 @@ mkcd() {
     cd "${1}"
 }
 
+# Create a directory and a file within
+mktouch() {
+	mkdir -p "${1}"
+	touch "${1}/${2}"
+}
+
 # Shell wraper that provides the ability to change the current working
 # directory when wxiting Yazi
 function yz() {
