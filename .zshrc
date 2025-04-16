@@ -124,8 +124,9 @@ alias lst="lsd --tree"
 # Alias to default Visual Studio Code Insiders
 alias code="code-insiders"
 
-# Miscellaneous aliases
-alias top="btop"
+# Alias to make it easier to activate/deactivate a Python virtual environment
+alias venv-a="source venv/bin/activate"
+alias venv-d="deactivate"
 
 # Create a directory and cd into it
 mkcd() {
