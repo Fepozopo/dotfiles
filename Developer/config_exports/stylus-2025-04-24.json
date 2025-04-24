@@ -91,7 +91,7 @@
       "hotkey._execute_browser_action": "",
       "hotkey.openManage": "",
       "hotkey.styleDisableAll": "",
-      "sync.enabled": "none",
+      "sync.enabled": "google",
       "iconset": -1,
       "badgeDisabled": "#8B0000",
       "badgeNormal": "#006666",
