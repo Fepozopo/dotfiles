@@ -25,5 +25,11 @@
     "mode": "system",
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha"
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "lua": true
   }
 }
