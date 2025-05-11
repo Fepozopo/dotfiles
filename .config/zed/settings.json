@@ -30,6 +30,10 @@
     "html": true,
     "catppuccin": true,
     "catppuccin-icons": true,
-    "lua": true
+    "codebook": true,
+    "dockerfile": true,
+    "lua": true,
+    "sql": true,
+    "zig": true
   }
 }
