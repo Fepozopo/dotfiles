@@ -8,7 +8,7 @@
 # ghostty +list-fonts
 
 # ghostty +list-themes
-theme = catppuccin-mocha
+theme = catppuccin-mocha.conf
 
 # keymaps
 keybind = global:cmd+grave_accent=toggle_quick_terminal
