@@ -124,7 +124,8 @@ alias lst="lsd --tree"
 # Alias to default Visual Studio Code Insiders
 alias code="code-insiders"
 
-# Alias to make it easier to activate/deactivate a Python virtual environment
+# Alias to make it easier to create/activate/deactivate a Python virtual environment
+alias venv-c="python3 -m venv venv"
 alias venv-a="source venv/bin/activate"
 alias venv-d="deactivate"
 
