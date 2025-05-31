@@ -106,8 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Exports
 export PATH=$PATH:$HOME/go/bin
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
-# Export for custom scripts
-export PATH="$HOME/Developer/scripts:$PATH"
+export PATH="$HOME/Developer/scripts:$PATH" # Export for custom scripts
 
 # Add a shortcut for dotfiles bare repo
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
@@ -123,6 +122,9 @@ alias lst="lsd --tree"
 
 # Alias to default Visual Studio Code Insiders
 alias code="code-insiders"
+
+# Alias to shorten python3 to python
+alias python="python3"
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
 alias venv-c="python3 -m venv venv"
