@@ -42,6 +42,30 @@
     "dockerfile": true,
     "lua": true,
     "sql": true,
-    "zig": true
+    "zig": true,
+    "ruff": true
+  },
+  "format_on_save": "on",
+  "languages": {
+    "Python": {
+      "language_servers": [
+        "pyright",
+        "ruff"
+      ],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
   }
 }
