@@ -34,6 +34,11 @@
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha"
   },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
