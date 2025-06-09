@@ -6,6 +6,7 @@
 # ========================================================================
 
 # ghostty +list-fonts
+font-family = JetBrainsMono Nerd Font Mono
 
 # ghostty +list-themes
 theme = catppuccin-mocha.conf
