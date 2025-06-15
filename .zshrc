@@ -118,7 +118,11 @@ alias mv="mv -v"
 
 # Aliases for ls
 alias ls="lsd"
+alias lsa="lsd -a"
 alias lst="lsd --tree"
+alias lsta="lsd -a --tree"
+alias lsl="lsd -l"
+alias lsla="lsd -la"
 
 # Alias to default Visual Studio Code Insiders
 alias code="code-insiders"
@@ -130,6 +134,14 @@ alias python="python3"
 alias venv-c="python3 -m venv venv"
 alias venv-a="source venv/bin/activate"
 alias venv-d="deactivate"
+
+# Alias for common git commands
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+alias gcm="git commit -m"
+alias gl="git log --oneline --graph --decorate"
 
 # Create a directory and cd into it
 mkcd() {
