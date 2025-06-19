@@ -30,6 +30,7 @@ brew "poppler"
 brew "postgresql@17", link: true
 brew "python-tk@3.13"
 brew "ripgrep"
+brew "rust"
 brew "sevenzip"
 brew "sqlc"
 brew "staticcheck"
