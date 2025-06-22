@@ -48,7 +48,8 @@
     "lua": true,
     "sql": true,
     "zig": true,
-    "ruff": true
+    "ruff": true,
+    "vue": true
   },
   "format_on_save": "on",
   "languages": {
