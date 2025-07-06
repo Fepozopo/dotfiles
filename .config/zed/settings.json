@@ -16,13 +16,12 @@
     "enabled_in_text_threads": false
   },
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
     },
-    "version": "2"
   },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
