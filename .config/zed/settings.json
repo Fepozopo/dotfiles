@@ -51,7 +51,8 @@
     "sql": true,
     "zig": true,
     "ruff": true,
-    "vue": true
+    "vue": true,
+    "make": true
   },
   "format_on_save": "on",
   "languages": {
