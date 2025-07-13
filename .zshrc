@@ -135,6 +135,14 @@ alias venv-c="python3 -m venv venv"
 alias venv-a="source venv/bin/activate"
 alias venv-d="deactivate"
 
+# Alias to simply use of UV
+uv-c() {
+	uv init
+	uv venv
+}
+alias uv-a="source .venv/bin/activate"
+alias uv-d="deactivate"
+
 # Alias for common git commands
 alias gs="git status"
 alias ga="git add"
