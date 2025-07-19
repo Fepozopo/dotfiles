@@ -31,5 +31,13 @@
       "tab": "editor::Indent", // Ensure Tab indents even in conflict
       "alt-y": "editor::AcceptEditPrediction"
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-e": "editor::ShowEditPrediction",
+      "alt-]": "editor::NextEditPrediction",
+      "alt-[": "editor::PreviousEditPrediction"
+    }
   }
 ]
