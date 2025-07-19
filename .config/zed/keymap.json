@@ -35,8 +35,6 @@
   {
     "context": "Editor",
     "bindings": {
-      "alt-e": "editor::ShowEditPrediction",
-      "alt-]": "editor::NextEditPrediction",
       "alt-[": "editor::PreviousEditPrediction"
     }
   },
@@ -44,6 +42,30 @@
     "context": "Workspace",
     "bindings": {
       "alt-/": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-e": "editor::ShowEditPrediction"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-]": "editor::NextEditPrediction"
+    }
+  },
+  {
+    "context": "GitCommit > Editor",
+    "bindings": {
+      "alt-e": "git::GenerateCommitMessage"
+    }
+  },
+  {
+    "context": "GitPanel > Editor",
+    "bindings": {
+      "alt-e": "git::GenerateCommitMessage"
     }
   }
 ]
