@@ -39,5 +39,11 @@
       "alt-]": "editor::NextEditPrediction",
       "alt-[": "editor::PreviousEditPrediction"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-/": "agent::ToggleFocus"
+    }
   }
 ]
