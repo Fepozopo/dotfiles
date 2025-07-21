@@ -39,12 +39,6 @@
     }
   },
   {
-    "context": "Workspace",
-    "bindings": {
-      "alt-/": "agent::ToggleFocus"
-    }
-  },
-  {
     "context": "Editor",
     "bindings": {
       "alt-e": "editor::ShowEditPrediction"
@@ -66,6 +60,12 @@
     "context": "GitPanel > Editor",
     "bindings": {
       "alt-e": "git::GenerateCommitMessage"
+    }
+  },
+  {
+    "context": "Workspace",
+      "bindings": {
+      "alt-/": "editor::ToggleFocus"
     }
   }
 ]
