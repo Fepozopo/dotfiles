@@ -6,10 +6,23 @@ git_prompt_info() {
     local branch=$(git symbolic-ref --short HEAD 2>/dev/null)
     # dirty marker
     local dirty=$(git status --porcelain 2>/dev/null | wc -l)
+    # check for upstream
+    local upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
+    local ahead="" behind=""
+    if [[ -n $upstream ]]; then
+      # unpushed commits
+      if [[ $(git rev-list --count @{u}..HEAD 2>/dev/null) -gt 0 ]]; then
+        ahead="↑"
+      fi
+      # unpulled commits
+      if [[ $(git rev-list --count HEAD..@{u} 2>/dev/null) -gt 0 ]]; then
+        behind="↓"
+      fi
+    fi
     if (( dirty > 0 )); then
-      echo "%B%F{blue}git:(%F{red}$branch%F{blue}) %F{yellow}* %b%f"
+      echo "%B%F{blue}(%F{red}$branch%F{blue})%F{yellow}*%F{magenta}$ahead$behind %b%f"
     else
-      echo "%F{blue}git:(%F{red}$branch%F{blue}) %f"
+      echo "%B%F{blue}(%F{red}$branch%F{blue})%F{magenta}$ahead$behind %b%f"
     fi
   fi
 }
