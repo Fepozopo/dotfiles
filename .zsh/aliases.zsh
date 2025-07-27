@@ -1,5 +1,10 @@
-# Add a shortcut for dotfiles bare repo
+# Add shortcuts for dotfiles bare repo
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dfs="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME status"
+alias dfa="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
+alias dfau="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add -u"  # stages modified and deleted files only, NOT new files
+alias dfc="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit"
+alias dfcm="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m"
 
 # Automatically add the verbose flag to commands
 alias rm="rm -v"

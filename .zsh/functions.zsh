@@ -20,7 +20,7 @@ git_prompt_info() {
       fi
     fi
     if (( dirty > 0 )); then
-      echo "%B%F{blue}(%F{red}$branch%F{blue})%F{yellow}*%F{magenta}$ahead$behind %b%f"
+      echo "%B%F{blue}(%F{red}$branch%F{yellow}*%F{blue})%F{magenta}$ahead$behind %b%f"
     else
       echo "%B%F{blue}(%F{red}$branch%F{blue})%F{magenta}$ahead$behind %b%f"
     fi
