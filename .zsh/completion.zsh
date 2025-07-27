@@ -68,7 +68,7 @@ zstyle ':completion:*' menu select
 
 # Autocomplete options for cd instead of directory stack
 zstyle ':completion:*' complete-options true
-zstyle ':completion:*' file-sort modification
+zstyle ':completion:*' file-sort name 
 
 zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
 zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}-- %D %d --%f'
