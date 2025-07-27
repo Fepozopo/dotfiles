@@ -3,7 +3,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias dfs="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME status"
 alias dfa="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
 alias dfc="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit"
-alias dfpsom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origin main"
+alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origin main"
 
 # Automatically add the verbose flag to commands
 alias rm="rm -v"
@@ -44,8 +44,8 @@ alias "ga"="git add"
 alias "gc"="git commit"
 alias "gb"="git branch"
 alias "gco"="git checkout"
-alias "gps"="git push"
-alias "gpso"="git push origin"
+alias "gp"="git push"
+alias "gpo"="git push origin"
 alias "gpl"="git pull"
 alias "gplo"="git pull origin"
 alias "gl"="git log --oneline --graph --decorate"
@@ -65,4 +65,15 @@ mktouch() {
 # Quickly navigate to my git repos
 mygit() {
   cd ~/Developer/workspace/github.com/Fepozopo/
+}
+
+# Shell wraper that provides the ability to change the current working
+# directory when wxiting Yazi
+function yz() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
 }
