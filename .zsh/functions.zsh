@@ -27,27 +27,6 @@ git_prompt_info() {
   fi
 }
 
-# Case insensitive completion
-autoload -Uz +X compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
-# Create a directory and cd into it
-mkcd() {
-    mkdir -p "${1}"
-    cd "${1}"
-}
-
-# Create a directory and a file within
-mktouch() {
-	mkdir -p "${1}"
-	touch "${1}/${2}"
-}
-
-# Quickly navigate to my git repos
-mygit() {
-  cd ~/Developer/workspace/github.com/Fepozopo/
-}
-
 # Shell wraper that provides the ability to change the current working
 # directory when wxiting Yazi
 function yz() {

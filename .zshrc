@@ -7,6 +7,11 @@ if [ -d "$HOME/.zsh" ]; then
     source "$HOME/.zsh/aliases.zsh"
   fi
 
+  # Source settings 
+  if [ -f "$HOME/.zsh/settings.zsh" ]; then
+    source "$HOME/.zsh/settings.zsh"
+  fi
+
   # Source functions (This must happen before appearance.zsh)
   if [ -f "$HOME/.zsh/functions.zsh" ]; then
     source "$HOME/.zsh/functions.zsh"
