@@ -17,55 +17,5 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
-  },
-  {
-    "context": "Editor && edit_prediction",
-    "bindings": {
-      "tab": "editor::Indent", // Revert Tab to its normal indent behavior
-      "alt-y": "editor::AcceptEditPrediction" // Use alt-y for predictions
-    }
-  },
-  {
-    "context": "Editor && edit_prediction_conflict",
-    "bindings": {
-      "tab": "editor::Indent", // Ensure Tab indents even in conflict
-      "alt-y": "editor::AcceptEditPrediction"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "alt-[": "editor::PreviousEditPrediction"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "alt-e": "editor::ShowEditPrediction"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "alt-]": "editor::NextEditPrediction"
-    }
-  },
-  {
-    "context": "GitCommit > Editor",
-    "bindings": {
-      "alt-e": "git::GenerateCommitMessage"
-    }
-  },
-  {
-    "context": "GitPanel > Editor",
-    "bindings": {
-      "alt-e": "git::GenerateCommitMessage"
-    }
-  },
-  {
-    "context": "Workspace",
-      "bindings": {
-      "alt-/": "editor::ToggleFocus"
-    }
   }
 ]
