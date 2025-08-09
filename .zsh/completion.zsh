@@ -42,6 +42,8 @@ setopt GLOB_COMPLETE          # Show autocompletion menu with globs
 setopt MENU_COMPLETE          # Automatically highlight first element of completion menu
 setopt AUTO_LIST              # Automatically list choices on ambiguous completion.
 setopt COMPLETE_IN_WORD       # Complete from both ends of a word.
+setopt HIST_IGNORE_ALL_DUPS   # When a command is entered, if it is already in the history, the older command is removed.
+setopt HIST_FIND_NO_DUPS      # When searching history (with up arrow or Ctrl+R), skip duplicate entries.
 
 # +---------+
 # | zstyles |
