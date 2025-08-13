@@ -15,6 +15,9 @@ source "$HOME/.zsh/git.zsh" # This must happen before appearance.zsh
 source "$HOME/.zsh/appearance.zsh"
 source "$HOME/.zsh/completion.zsh" # This should happen last
 
+# Source private config settings
+source "$HOME/.env"
+
 # github.com/zdharma-continuum/fast-syntax-highlighting
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
