@@ -17,5 +17,11 @@
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-\\": "editor::ToggleFocus"
+    }
   }
 ]
