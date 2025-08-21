@@ -20,8 +20,12 @@
   },
   {
     "context": "Workspace",
+    "bindings": {}
+  },
+  {
+    "context": "Workspace",
     "bindings": {
-      "alt-\\": "editor::ToggleFocus"
+      "ctrl-cmd-\\": "editor::ToggleFocus"
     }
   }
 ]
