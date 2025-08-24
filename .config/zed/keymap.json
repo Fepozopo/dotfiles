@@ -25,7 +25,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-cmd-\\": "editor::ToggleFocus"
+      "alt-`": "editor::ToggleFocus"
     }
   }
 ]
