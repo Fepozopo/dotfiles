@@ -1,5 +1,6 @@
 {
+  "preferredEditor": "neovim",
+  "vimMode": true,
   "theme": "Default",
-  "selectedAuthType": "oauth-personal",
-  "preferredEditor": "zed"
+  "selectedAuthType": "oauth-personal"
 }
