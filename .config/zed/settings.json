@@ -54,12 +54,13 @@
     "zig": true,
     "ruff": true,
     "vue": true,
-    "make": true
+    "make": true,
+    "basedpyright": true
   },
   "format_on_save": "on",
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff"],
+      "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
       "formatter": [
         {
