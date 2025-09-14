@@ -54,8 +54,7 @@
     "zig": true,
     "ruff": true,
     "vue": true,
-    "make": true,
-    "basedpyright": true
+    "make": true
   },
   "format_on_save": "on",
   "languages": {
