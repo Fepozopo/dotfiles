@@ -52,28 +52,8 @@
     "lua": true,
     "sql": true,
     "zig": true,
-    "ruff": true,
     "vue": true,
     "make": true
   },
-  "format_on_save": "on",
-  "languages": {
-    "Python": {
-      "language_servers": ["basedpyright", "ruff"],
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
-        {
-          "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    }
-  }
+  "format_on_save": "on"
 }
