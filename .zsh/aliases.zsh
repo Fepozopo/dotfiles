@@ -22,12 +22,12 @@ alias lsla="lsd -la"
 alias code="code-insiders"
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
-alias venv-c="python3 -m venv venv"
+alias venv-i="python3 -m venv venv"
 alias venv-a="source venv/bin/activate"
 alias venv-d="deactivate"
 
 # Alias to simplify use of Python UV
-uv-c() {
+uv-i() {
 	uv init
 	uv venv
 }
