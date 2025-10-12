@@ -36,6 +36,7 @@ brew "neovim"
 brew "poppler"
 brew "postgresql@17", link: true
 brew "python-tk@3.13"
+brew "python@3.14"
 brew "ripgrep"
 brew "rust"
 brew "sevenzip"
