@@ -43,6 +43,7 @@
       "enabled": false
     }
   },
+  "title_bar": { "show_branch_icon": true },
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
