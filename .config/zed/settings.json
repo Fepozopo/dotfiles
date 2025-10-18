@@ -21,7 +21,7 @@
   },
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "ask",
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
@@ -43,7 +43,9 @@
       "enabled": false
     }
   },
-  "title_bar": { "show_branch_icon": true },
+  "title_bar": {
+    "show_branch_icon": true
+  },
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
@@ -54,7 +56,8 @@
     "sql": true,
     "zig": true,
     "vue": true,
-    "make": true
+    "make": true,
+    "git-firefly": true
   },
   "format_on_save": "on"
 }
