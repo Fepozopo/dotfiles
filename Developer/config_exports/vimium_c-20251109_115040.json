@@ -1,0 +1,22 @@
+{
+	"name": "Vimium C",
+	"@time": "11/9/2025, 11:50:40 AM",
+	"time": 1762717840746,
+	"environment": {
+		"extension": "2.12.3",
+		"platform": "mac",
+		"chromium": 144
+	},
+	"allBrowserUrls": true,
+	"exclusionRules": [],
+	"keyLayout": 18,
+	"keyMappings": [
+		"#!no-check",
+		"map J nextTab",
+		"map K previousTab",
+		""
+	],
+	"searchUrl": "https://duckduckgo.com/",
+	"vimSync": true,
+	"ignoreCapsLock": 2
+}
