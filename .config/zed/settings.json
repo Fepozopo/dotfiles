@@ -28,6 +28,14 @@
       "model": "gpt-5-mini"
     }
   },
+  "agent_servers": {
+    "Opencode": {
+      "command": "/opt/homebrew/bin/opencode",
+      "args": [
+        "acp"
+      ]
+    }
+  },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
   "vim_mode": true,
