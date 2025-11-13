@@ -28,14 +28,6 @@
       "model": "gpt-5-mini"
     }
   },
-  "agent_servers": {
-    "Opencode": {
-      "command": "/opt/homebrew/bin/opencode",
-      "args": [
-        "acp"
-      ]
-    }
-  },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
   "vim_mode": true,
@@ -65,7 +57,8 @@
     "zig": true,
     "vue": true,
     "make": true,
-    "git-firefly": true
+    "git-firefly": true,
+    "opencode": true
   },
   "format_on_save": "on"
 }
