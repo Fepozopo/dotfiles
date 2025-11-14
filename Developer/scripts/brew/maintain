@@ -12,4 +12,8 @@ brew upgrade
 echo "Cleaning up..."
 brew cleanup
 
+# Perform cleanup of old versions of packages
+echo "Cleaning up old versions..."
+brew cleanup --prune-prefix
+
 echo "Maintenance tasks complete."
