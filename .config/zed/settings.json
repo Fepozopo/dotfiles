@@ -24,7 +24,7 @@
   },
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "ask",
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
@@ -61,7 +61,8 @@
     "vue": true,
     "make": true,
     "git-firefly": true,
-    "opencode": true
+    "opencode": true,
+    "rainbow-csv": true
   },
   "format_on_save": "on"
 }
