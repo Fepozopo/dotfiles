@@ -8,19 +8,19 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "sticky_scroll": {
-    "enabled": true
+    "enabled": true,
   },
   "show_edit_predictions": true,
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "agent": {
     "always_allow_tool_actions": true,
@@ -28,8 +28,8 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
-    }
+      "model": "gpt-5-mini",
+    },
   },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
@@ -39,15 +39,15 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "auto_install_extensions": {
     "html": true,
@@ -62,8 +62,9 @@
     "make": true,
     "git-firefly": true,
     "opencode": true,
-    "rainbow-csv": true
+    "rainbow-csv": true,
   },
   "format_on_save": "on",
-  "colorize_brackets": true
+  "colorize_brackets": true,
+  "tabs": { "file_icons": true },
 }
