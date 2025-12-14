@@ -31,6 +31,26 @@ bindkey -M menuselect '^xu' undo                           # Undo
 # Autoload and initialize completion system
 autoload -Uz +X compinit && compinit
 
+# +---------------------------+
+# | Custom Script Completions |
+# +---------------------------+
+
+# Hard-coded completions for the `scr` command
+SCR_COMPS=(
+  brew/dump
+  brew/maintain
+  brew/restore
+  dotfiles/setup
+  psql/start
+  psql/stop
+)
+_scr() {
+  # Provide the static completions defined above
+  compadd -a SCR_COMPS
+}
+# Register the completion for the `scr` command
+compdef _scr scr 2>/dev/null || true
+
 # +---------+
 # | Options |
 # +---------+

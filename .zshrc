@@ -14,7 +14,6 @@ source "$HOME/.zsh/keymap.zsh"
 source "$HOME/.zsh/git.zsh" # This must happen before appearance.zsh
 source "$HOME/.zsh/appearance.zsh"
 source "$HOME/.zsh/completion.zsh" # This should happen last
-source "$HOME/Developer/scripts/completions/scr-completion" # This should happen after completion.zsh
 
 # Source private config settings
 source "$HOME/.env"
