@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Hard-coded completions list. Edit these entries as you like.
+SCR_COMPS=(
+  brew/dump
+  brew/maintain
+  brew/restore
+  dotfiles/setup
+  psql/start
+  psql/stop
+)
+
+# If running under zsh, register a native zsh completion function.
+if [ -n "$ZSH_VERSION" ]; then
+  # Initialize zsh completion system if not already initialized
+  autoload -Uz compinit 2>/dev/null || true
+  compinit 2>/dev/null || true
+
+  _scr() {
+    compadd -a SCR_COMPS
+  }
+  compdef _scr scr 2>/dev/null || true
+else
+  # Bash-style completion
+  _scr() {
+    local cur
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    COMPREPLY=( $(compgen -W "${SCR_COMPS[*]}" -- "$cur") )
+  }
+  complete -F _scr scr 2>/dev/null || true
+fi
+

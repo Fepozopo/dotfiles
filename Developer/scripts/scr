@@ -20,18 +20,6 @@ fi
 # Get the argument
 arg="$1"
 
-# Check if the argument is 'lst'
-if [ "$arg" == "lst" ]; then
-    # Run the 'lsd --tree' command on the script directory
-    lsd --tree "$script_dir"
-    exit_status=$?
-    if [ $exit_status -ne 0 ]; then
-        echo "Error: 'list' command exited with status $exit_status."
-        exit $exit_status
-    fi
-    exit 0
-fi
-
 # Get the folder and script name from the argument
 script_path="$arg"
 
