@@ -12,4 +12,4 @@ font-family = JetBrainsMono Nerd Font Mono
 theme = catppuccin-mocha.conf
 
 # keymaps
-keybind = global:cmd+grave_accent=toggle_quick_terminal
+keybind = global:cmd+option+grave_accent=toggle_quick_terminal
