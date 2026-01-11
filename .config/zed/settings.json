@@ -67,4 +67,16 @@
   "format_on_save": "on",
   "colorize_brackets": true,
   "tabs": { "file_icons": true },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        "ty",
+        "ruff",
+        "!basedpyright",
+        "!pyrefly",
+        "!pyright",
+        "!pylsp",
+      ],
+    },
+  },
 }
