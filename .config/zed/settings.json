@@ -42,13 +42,12 @@
     "dark": "Catppuccin Mocha",
   },
   "git": {
-    "inline_blame": {
-      "enabled": false,
-    },
+    "inline_blame": { "enabled": false },
   },
   "title_bar": {
     "show_branch_icon": true,
   },
+  "which_key": { "enabled": true },
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
