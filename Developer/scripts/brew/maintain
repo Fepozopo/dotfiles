@@ -8,11 +8,17 @@ brew update
 echo "Upgrading installed packages..."
 brew upgrade
 
-# Perform cleanup
-echo "Cleaning up..."
-brew cleanup
+# Remove formulae that were installed as dependencies but are no longer actively used
+# or required by any other installed software
+echo "Removing unused dependencies..."
+brew autoremove
 
-# Perform cleanup of old versions of packages
+# Perform cleanup of cash files and recent downloads older than 17 days
+echo "Cleaning up..."
+brew cleanup --prune=17
+
+# Remove everything in Homebrew’s prefix that are not needed,
+# including symlinks, directories, and the older versions of packages
 echo "Cleaning up old versions..."
 brew cleanup --prune-prefix
 
