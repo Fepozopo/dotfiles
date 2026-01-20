@@ -62,6 +62,7 @@
     "git-firefly": true,
     "opencode": true,
     "rainbow-csv": true,
+    "comment": true,
   },
   "format_on_save": "on",
   "colorize_brackets": true,
