@@ -18,7 +18,18 @@ alias lsta="lsd -a --tree"
 alias lsl="lsd -l"
 alias lsla="lsd -la"
 
-# Alias to default Visual Studio Code Insiders
+# Navigation aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias hm="cd ~"
+alias dl="cd ~/Downloads"
+mygit() {
+  cd ~/Developer/workspace/github.com/Fepozopo/
+}
+
+# Alias to open Visual Studio Code Insiders
 alias code="code-insiders"
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
@@ -60,11 +71,6 @@ mkcd() {
 mktouch() {
 	mkdir -p "${1}"
 	touch "${1}/${2}"
-}
-
-# Quickly navigate to my git repos
-mygit() {
-  cd ~/Developer/workspace/github.com/Fepozopo/
 }
 
 # Shell wraper that provides the ability to change the current working
