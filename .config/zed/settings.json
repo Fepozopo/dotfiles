@@ -9,11 +9,11 @@
 {
   "agent_servers": {
     "opencode": {
-      "type": "registry"
+      "type": "registry",
     },
     "github-copilot": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "sticky_scroll": {
     "enabled": true,
@@ -68,7 +68,6 @@
     "vue": true,
     "make": true,
     "git-firefly": true,
-    "opencode": true,
     "rainbow-csv": true,
     "comment": true,
   },
