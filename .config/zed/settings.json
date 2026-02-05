@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "git_panel": {
-    "tree_view": false
+    "tree_view": false,
   },
   "agent_servers": {
     "opencode": {
@@ -23,15 +23,13 @@
   },
   "show_edit_predictions": true,
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
     },
     "enabled_in_text_threads": false,
-  },
-  "features": {
-    "edit_prediction_provider": "copilot",
   },
   "agent": {
     "always_allow_tool_actions": true,
