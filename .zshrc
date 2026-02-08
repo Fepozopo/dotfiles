@@ -3,7 +3,7 @@
 # Start profile zsh
 # zmodload zsh/zprof
 
-# Exports
+# Path exports
 export PATH=$PATH:$HOME/go/bin
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="$HOME/Developer/scripts:$PATH" # Export for custom scripts
@@ -17,6 +17,9 @@ source "$HOME/.zsh/completion.zsh" # This should happen last
 
 # Source private config settings
 source "$HOME/.env"
+
+# Variable exports
+export EDITOR=nvim # Set default editor
 
 # github.com/zdharma-continuum/fast-syntax-highlighting
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

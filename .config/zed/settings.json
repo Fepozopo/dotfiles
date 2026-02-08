@@ -73,6 +73,7 @@
     "git-firefly": true,
     "rainbow-csv": true,
     "comment": true,
+    "toml": true,
   },
   "format_on_save": "on",
   "colorize_brackets": true,
