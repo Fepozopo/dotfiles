@@ -61,6 +61,12 @@ alias "gpl"="git pull"
 alias "gplo"="git pull origin"
 alias "gl"="git log --oneline --graph --decorate"
 
+# Aliases for du
+alias dus="du -hs"
+dur() {
+    du -hc -d "${1}" "${2}" | sort -h
+}
+
 # Create a directory and cd into it
 mkcd() {
     mkdir -p "${1}"
