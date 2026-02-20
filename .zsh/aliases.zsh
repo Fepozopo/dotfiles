@@ -61,8 +61,13 @@ alias "gpl"="git pull"
 alias "gplo"="git pull origin"
 alias "gl"="git log --oneline --graph --decorate"
 
-# Aliases for du
+# Disk usage human readable and summary for the current directory
 alias dus="du -hs"
+# Disk usage for directories AND files in human readable format with the grand total, sorted by size
+duf() {
+    du -ahc "${1}" | sort -h
+}
+# Disk usage human readable with the grand total, for a specific directory recursively up to a specified depth, sorted by size
 dur() {
     du -hc -d "${1}" "${2}" | sort -h
 }
