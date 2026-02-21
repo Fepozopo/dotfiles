@@ -7,8 +7,27 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "format_on_save": "on",
+  "colorize_brackets": true,
   "git_panel": {
     "tree_view": true,
+  },
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "title_bar": {
+    "show_branch_icon": true,
+  },
+  "which_key": {
+    "enabled": true,
+  },
+  "tabs": {
+    "file_icons": true,
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
   },
   "agent_servers": {
     "opencode": {
@@ -20,8 +39,13 @@
       "type": "registry",
     },
   },
-  "sticky_scroll": {
-    "enabled": true,
+  "agent": {
+    "default_profile": "write",
+    "model_parameters": [],
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o",
+    },
   },
   "show_edit_predictions": true,
   "edit_predictions": {
@@ -33,14 +57,6 @@
     },
     "enabled_in_text_threads": false,
   },
-  "agent": {
-    "default_profile": "write",
-    "model_parameters": [],
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5.1-mini",
-    },
-  },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
   "vim_mode": true,
@@ -51,13 +67,6 @@
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha",
   },
-  "git": {
-    "inline_blame": { "enabled": false },
-  },
-  "title_bar": {
-    "show_branch_icon": true,
-  },
-  "which_key": { "enabled": true },
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
@@ -74,9 +83,6 @@
     "comment": true,
     "toml": true,
   },
-  "format_on_save": "on",
-  "colorize_brackets": true,
-  "tabs": { "file_icons": true },
   "languages": {
     "Python": {
       "language_servers": [
