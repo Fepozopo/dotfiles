@@ -19,10 +19,6 @@ alias lsl="lsd -l"
 alias lsla="lsd -la"
 
 # Navigation aliases
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias hm="cd ~"
 alias dl="cd ~/Downloads"
 mygit() {
@@ -31,6 +27,10 @@ mygit() {
 
 # Alias to open Visual Studio Code Insiders
 alias code="code-insiders"
+
+# Lazygit and Lazydocker alias
+alias lzg="lazygit"
+alias lzd="lazydocker"
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
 alias venv-i="python3 -m venv venv"
