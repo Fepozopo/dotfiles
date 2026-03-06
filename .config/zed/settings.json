@@ -9,43 +9,46 @@
 {
   "format_on_save": "on",
   "colorize_brackets": true,
-  "git_panel": {
-    "tree_view": true
-  },
   "sticky_scroll": {
-    "enabled": true
-  },
-  "title_bar": {
-    "show_branch_icon": true
+    "enabled": true,
   },
   "which_key": {
-    "enabled": true
+    "enabled": true,
+  },
+  "title_bar": {
+    "show_branch_icon": true,
   },
   "tabs": {
-    "file_icons": true
+    "file_icons": true,
+  },
+  "project_panel": {
+    "diagnostic_badges": true,
+  },
+  "git_panel": {
+    "tree_view": true,
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "agent_servers": {
     "opencode": {
       "default_model": "github-copilot/gpt-5-mini",
-      "type": "registry"
+      "type": "registry",
     },
     "github-copilot": {
       "default_model": "gpt-5-mini",
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
-    }
+      "model": "gpt-5-mini",
+    },
   },
   "show_edit_predictions": true,
   "edit_predictions": {
@@ -53,9 +56,9 @@
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "base_keymap": "VSCode",
   "icon_theme": "Catppuccin Mocha",
@@ -65,7 +68,7 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "auto_install_extensions": {
     "html": true,
@@ -81,7 +84,7 @@
     "git-firefly": true,
     "rainbow-csv": true,
     "comment": true,
-    "toml": true
+    "toml": true,
   },
   "languages": {
     "Python": {
@@ -91,14 +94,14 @@
         "!basedpyright",
         "!pyrefly",
         "!pyright",
-        "!pylsp"
-      ]
+        "!pylsp",
+      ],
     },
     "HTML": {
-      "format_on_save": "off"
+      "format_on_save": "off",
     },
     "CSS": {
-      "format_on_save": "off"
-    }
-  }
+      "format_on_save": "off",
+    },
+  },
 }

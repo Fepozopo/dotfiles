@@ -3,8 +3,11 @@ autoload -U colors && colors
 
 # Expand variables and commands in PROMPT variables
 setopt prompt_subst
-PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%c%{$reset_color%}"
-PROMPT+=' $(git_prompt_info)'
+# Two-line prompt:
+#  - first line: full path
+#  - second line: current folder, git info, show exit code when non-zero, and colored arrow (green on success / red on failure)
+PROMPT='%{$fg_bold[cyan]%}%~%{$reset_color%}
+%{$fg_bold[cyan]%}%1~%{$reset_color%}$(git_prompt_info)%(?.. %{$fg_bold[red]%}(%?%)$reset_color%}) %(?.%{$fg_bold[green]%}➜ .%{$fg_bold[red]%}➜ )'
 
 # Use diff --color if available
 if command diff --color /dev/null{,} &>/dev/null; then
