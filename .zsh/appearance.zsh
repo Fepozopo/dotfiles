@@ -38,7 +38,7 @@ build_two_line_prompt() {
   fi
 
   # color sequences for the path
-  local colored_path="%B%F{cyan}%~%f"
+  local colored_path="%B%F{cyan}%~%f%b"
 
   # Assemble PROMPT: top connector + colored path + fill, newline, bottom connector + second-line content
   PROMPT="%B%F{blue}${top_left_char}%b${colored_path}%B%F{blue}${fill}"$'\n'"%B%F{blue}${bottom_left_char}%b${PROMPT_SECOND}"
