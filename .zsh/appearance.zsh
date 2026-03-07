@@ -3,11 +3,77 @@ autoload -U colors && colors
 
 # Expand variables and commands in PROMPT variables
 setopt prompt_subst
-# Two-line prompt:
-#  - first line: full path
-#  - second line: current folder, git info, show exit code when non-zero, and colored arrow (green on success / red on failure)
-PROMPT='%{$fg_bold[cyan]%}%~%{$reset_color%}
-%{$fg_bold[cyan]%}%1~%{$reset_color%}$(git_prompt_info)%(?.. %{$fg_bold[red]%}(%?%)$reset_color%}) %(?.%{$fg_bold[green]%}➜ .%{$fg_bold[red]%}➜ )'
+
+# Second-line content
+PROMPT_SECOND='$(git_prompt_info)%(?.. %B%F{red}(%?%)%f) %(?.%F{green}➜ .%F{red}➜ )'
+
+# Build a two-line prompt where:
+#  - top line: connector + full path + a horizontal rule that fills the terminal
+#  - bottom line: connector + the second-line prompt content
+build_two_line_prompt() {
+  # printable path (no color escapes) used to compute widths
+  local raw_path=$(print -Pn "%~")
+
+  # terminal width
+  local cols=${COLUMNS:-$(tput cols)}
+
+  # left-side connectors
+  local top_left_char='┌'
+  local bottom_left_char='└'
+
+  # a small space between path and the rule
+  local spacer=' '
+
+  # compute printable length consumed on the top-left: connector + path + spacer
+  local left_len=$(( ${#raw_path} + 1 + ${#spacer} ))
+
+  # number of '─' characters to draw
+  local fill_count=$(( cols - left_len ))
+  (( fill_count < 0 )) && fill_count=0
+
+  local fill=''
+  if (( fill_count > 0 )); then
+    # build repeated '─' characters; seq exists on macOS
+    fill=$(printf '─%.0s' $(seq 1 $fill_count))
+  fi
+
+  # color sequences for the path
+  local colored_path="%B%F{cyan}%~%f"
+
+  # Assemble PROMPT: top connector + colored path + fill, newline, bottom connector + second-line content
+  PROMPT="%B%F{blue}${top_left_char}%b${colored_path}%B%F{blue}${fill}"$'\n'"%B%F{blue}${bottom_left_char}%b${PROMPT_SECOND}"
+}
+
+# Run before each prompt so it adapts to changes/resizes
+precmd_functions+=(build_two_line_prompt)
+
+# TRAPWINCH: handle terminal resizes so the two-line prompt keeps its layout.
+TRAPWINCH() {
+  emulate -L zsh
+
+  # Update LINES and COLUMNS in a robust way
+  local rows cols
+  if read -r rows cols < <(stty size 2>/dev/null); then
+    LINES=$rows
+    COLUMNS=$cols
+  else
+    # fallback to tput if stty failed
+    COLUMNS=$(tput cols 2>/dev/null || ${COLUMNS:-80})
+  fi
+
+  # Rebuild the prompt string using the new width so fill-count is correct.
+  # This updates $PROMPT for the next render and ensures fill calculation uses current $COLUMNS.
+  if typeset -f build_two_line_prompt >/dev/null 2>&1; then
+    build_two_line_prompt
+  fi
+
+  # If we're inside the ZLE line editor (i.e. the interactive prompt is visible),
+  # ask it to redraw the prompt immediately. Guarding so we don't call zle when not available.
+  if [[ -o zle ]] 2>/dev/null || [[ -n ${ZLE_STATE-} ]] 2>/dev/null; then
+    # Try the common widget to refresh the prompt. It may fail silently in some contexts.
+    zle reset-prompt 2>/dev/null || zle -R 2>/dev/null || true
+  fi
+}
 
 # Use diff --color if available
 if command diff --color /dev/null{,} &>/dev/null; then

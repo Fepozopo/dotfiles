@@ -5,6 +5,9 @@ alias dfa="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
 alias dfc="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit"
 alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origin main"
 
+# General aliases
+alias szc="source ~/.zshrc"
+
 # Automatically add the verbose flag to commands
 alias rm="rm -v"
 alias cp="cp -v"
