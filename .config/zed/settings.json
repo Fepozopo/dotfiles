@@ -44,11 +44,18 @@
     },
   },
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini",
+    },
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_deny": [{ "pattern": "git\\s+(add|commit)" }],
+        },
+      },
     },
   },
   "show_edit_predictions": true,

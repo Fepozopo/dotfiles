@@ -6,5 +6,11 @@
   "compaction": {
     "auto": true,
     "prune": true
+  },
+  "permission": {
+    "bash": {
+      "git add": "deny",
+      "git commit": "deny"
+    }
   }
 }
