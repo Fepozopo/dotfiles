@@ -27,6 +27,7 @@
   },
   "git_panel": {
     "tree_view": true,
+    "file_icons": true,
   },
   "git": {
     "inline_blame": {

@@ -9,8 +9,8 @@
   },
   "permission": {
     "bash": {
-      "git add": "deny",
-      "git commit": "deny"
+      "git add *": "deny",
+      "git commit *": "deny"
     }
   }
 }
