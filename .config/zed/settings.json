@@ -45,6 +45,18 @@
     },
   },
   "agent": {
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5-mini",
+        "enable_thinking": false
+      }
+    ],
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": false
+    },
     "default_profile": "write",
     "model_parameters": [],
     "default_model": {

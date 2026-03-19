@@ -9,8 +9,16 @@
   },
   "permission": {
     "bash": {
-      "git add *": "deny",
-      "git commit *": "deny"
+      "git *": "ask"
+    }
+  },
+  "agent": {
+    "build": {
+      "permission": {
+        "bash": {
+          "git *": "ask"
+        }
+      }
     }
   }
 }
