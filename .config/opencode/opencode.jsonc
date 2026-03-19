@@ -7,16 +7,12 @@
     "auto": true,
     "prune": true
   },
-  "permission": {
-    "bash": {
-      "git *": "ask"
-    }
-  },
   "agent": {
     "build": {
       "permission": {
         "bash": {
-          "git *": "ask"
+          "git add": "deny",
+          "git commit": "deny"
         }
       }
     }
