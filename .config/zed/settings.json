@@ -34,6 +34,7 @@
   },
   "project_panel": {
     "diagnostic_badges": true,
+    "git_status_indicator": true,
   },
   "git_panel": {
     "tree_view": true,
