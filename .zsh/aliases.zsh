@@ -53,16 +53,16 @@ alias uv-d="deactivate"
     git fetch
     git status
 }
-alias "gs"="git status"
-alias "ga"="git add"
-alias "gc"="git commit"
-alias "gb"="git branch"
-alias "gco"="git checkout"
-alias "gp"="git push"
-alias "gpo"="git push origin"
-alias "gpl"="git pull"
-alias "gplo"="git pull origin"
-alias "gl"="git log --oneline --graph --decorate"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gb="git branch"
+alias gco="git checkout"
+alias gp="git push"
+alias gpo="git push origin"
+alias gpl="git pull"
+alias gplo="git pull origin"
+alias gl="git log --oneline --graph --decorate"
 
 # Disk usage human readable and summary for the current directory
 alias dus="du -hs"
@@ -80,7 +80,6 @@ mkcd() {
     mkdir -p "${1}"
     cd "${1}"
 }
-
 # Create a directory and a file within
 mktouch() {
 	mkdir -p "${1}"
