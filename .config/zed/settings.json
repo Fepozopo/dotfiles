@@ -17,6 +17,7 @@
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha",
   },
+  "relative_line_numbers": "enabled",
   "format_on_save": "on",
   "colorize_brackets": true,
   "diff_view_style": "unified",
@@ -121,12 +122,6 @@
         "!pyright",
         "!pylsp",
       ],
-    },
-    "HTML": {
-      "format_on_save": "off",
-    },
-    "CSS": {
-      "format_on_save": "off",
     },
   },
 }
