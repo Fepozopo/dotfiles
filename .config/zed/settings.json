@@ -56,14 +56,13 @@
     },
     "github-copilot-cli": {
       "type": "registry",
+      "default_mode": "agent",
+      "default_model": "gpt-5-mimi",
     },
     "opencode": {
+      "type": "registry",
+      "default_mode": "build",
       "default_model": "github-copilot/gpt-5-mini",
-      "type": "registry",
-    },
-    "github-copilot": {
-      "default_model": "gpt-5-mini",
-      "type": "registry",
     },
   },
   "agent": {
