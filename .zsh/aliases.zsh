@@ -22,9 +22,11 @@ alias lsl="lsd -l"
 alias lsla="lsd -la"
 
 # Navigation aliases
-alias hm="cd ~"
-alias dl="cd ~/Downloads"
-alias tmp="cd /var/folders/rw/8wqvgmh15qz6tymnx7skyc9w0000gn/T/"
+alias gth="cd ~"
+alias gtd="cd ~/Downloads"
+gtt() {
+    cd "${TMPDIR}"
+}
 mygit() {
   cd ~/Developer/workspace/github.com/Fepozopo/
 }
