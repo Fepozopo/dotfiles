@@ -24,6 +24,7 @@ alias lsla="lsd -la"
 # Navigation aliases
 alias gth="cd ~"
 alias gtd="cd ~/Downloads"
+alias gtc="cd ~/.config"
 gtt() {
     cd "${TMPDIR}"
 }
