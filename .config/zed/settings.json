@@ -84,6 +84,12 @@
       "enable_thinking": true,
       "effort": "high",
     },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": true,
+      "effort": "high",
+    },
     "tool_permissions": {
       "tools": {
         "terminal": {
