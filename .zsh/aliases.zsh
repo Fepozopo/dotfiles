@@ -28,7 +28,7 @@ alias gtc="cd ~/.config"
 gtt() {
     cd "${TMPDIR}"
 }
-mygit() {
+gtg() {
   cd ~/Developer/workspace/github.com/Fepozopo/
 }
 
