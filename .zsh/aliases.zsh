@@ -22,6 +22,8 @@ alias lsl="lsd -l"
 alias lsla="lsd -la"
 
 # Navigation aliases
+alias ..="cd .."
+alias ...="cd ../.."
 alias gth="cd ~"
 alias gtd="cd ~/Downloads"
 alias gtc="cd ~/.config"
