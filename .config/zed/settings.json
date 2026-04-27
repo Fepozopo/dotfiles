@@ -41,7 +41,7 @@
     "enabled": true,
   },
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_status_icon": true
   },
   "tabs": {
     "file_icons": true,
@@ -88,7 +88,7 @@
       "provider": "copilot_chat",
       "model": "gpt-5-mini",
       "enable_thinking": true,
-      "effort": "high",
+      "effort": "medium",
     },
     "tool_permissions": {
       "tools": {
