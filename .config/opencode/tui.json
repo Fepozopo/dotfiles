@@ -5,5 +5,5 @@
   "scroll_acceleration": {
     "enabled": false
   },
-  "diff_style": "auto"
+  "diff_style": "stacked"
 }
