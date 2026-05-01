@@ -144,7 +144,18 @@
     "comment": true,
     "toml": true,
   },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "code_lens": "on",
   "languages": {
+    "Go": {
+      "code_actions_on_format": {
+        "golangcilint": true,
+      },
+      "language_servers": ["gopls"],
+      "formatter": ["language_server"],
+    },
     "Python": {
       "language_servers": [
         "ty",
@@ -154,6 +165,11 @@
         "!pyright",
         "!pylsp",
       ],
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
     },
   },
 }
