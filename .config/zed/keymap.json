@@ -8,7 +8,7 @@
 [
   {
     "bindings": {
-      "cmd-alt-p": [
+      "space f": [
         "task::Spawn",
         { "task_name": "Television File Finder", "reveal_target": "center" },
       ],
@@ -36,6 +36,13 @@
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
       // visual, visual line & visual block modes
+    },
+  },
+  // Which key
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "space": null, // Disable the default action vim::WrappingRight
     },
   },
 ]

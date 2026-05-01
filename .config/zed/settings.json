@@ -74,6 +74,7 @@
     "dock": "right",
   },
   "agent": {
+    "favorite_models": [],
     "dock": "left",
     "default_profile": "write",
     "model_parameters": [],
