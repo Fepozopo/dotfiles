@@ -39,9 +39,10 @@
   },
   "which_key": {
     "enabled": true,
+    "delay_ms": 0,
   },
   "title_bar": {
-    "show_branch_status_icon": true
+    "show_branch_status_icon": true,
   },
   "tabs": {
     "file_icons": true,
