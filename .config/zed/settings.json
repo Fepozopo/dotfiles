@@ -21,6 +21,12 @@
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha",
   },
+  "colorize_brackets": true,
+  // Indentation, rainbow indentation
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
   // Active pane styling settings.
   "active_pane_modifiers": {
     // Inset border size of the active pane, in pixels.
@@ -32,7 +38,6 @@
   "vertical_scroll_margin": 7,
   "relative_line_numbers": "enabled",
   "format_on_save": "on",
-  "colorize_brackets": true,
   "diff_view_style": "unified",
   "sticky_scroll": {
     "enabled": true,
