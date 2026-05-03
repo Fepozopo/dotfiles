@@ -146,7 +146,7 @@
     "toml": true,
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
   },
   "code_lens": "on",
   "languages": {
