@@ -8,10 +8,6 @@
 [
   {
     "bindings": {
-      "space f": [
-        "task::Spawn",
-        { "task_name": "Television File Finder", "reveal_target": "center" },
-      ],
       "alt-`": "editor::ToggleFocus",
       // Ctrl jklk to move between panes
       "ctrl-h": "workspace::ActivatePaneLeft",
@@ -24,6 +20,11 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
+      "space f": [
+        "task::Spawn",
+        { "task_name": "Television File Finder", "reveal_target": "center" },
+      ],
+      "g z": "vim::HelixJumpToWord",
     },
   },
   {

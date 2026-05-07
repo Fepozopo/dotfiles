@@ -59,24 +59,24 @@
     },
   },
   "project_panel": {
-    "dock": "right",
+    "dock": "left",
     "diagnostic_badges": true,
     "git_status_indicator": true,
   },
   "git_panel": {
-    "dock": "right",
+    "dock": "left",
     "tree_view": true,
     "file_icons": true,
   },
   "collaboration_panel": {
-    "dock": "right",
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "right",
+    "dock": "left",
   },
   "agent": {
     "favorite_models": [],
-    "dock": "left",
+    "dock": "right",
     "default_profile": "write",
     "model_parameters": [],
     "single_file_review": true,
