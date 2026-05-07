@@ -92,6 +92,14 @@ mktouch() {
 	touch "${1}/${2}"
 }
 
+# Move a file to and from the downloads folder
+mvtd() {
+    mv "${1}" ~/Downloads/
+}
+mvfd() {
+    mv ~/Downloads/"${1}" .
+}
+
 # Shell wraper that provides the ability to change the current working
 # directory when wxiting Yazi
 function yz() {
