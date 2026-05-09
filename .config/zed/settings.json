@@ -108,7 +108,7 @@
   },
   "show_edit_predictions": true,
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "zed",
     "mode": "subtle",
     "copilot": {
       "proxy": null,

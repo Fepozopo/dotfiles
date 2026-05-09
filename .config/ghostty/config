@@ -5,6 +5,8 @@
 # Empty values reset the configuration to the default value
 # ========================================================================
 
+font-size = 13
+
 # ghostty +list-fonts
 font-family = JetBrainsMono Nerd Font Mono
 

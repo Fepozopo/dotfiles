@@ -14,6 +14,11 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
+      // Ctrl up/down/left/right resize pane
+      "ctrl-up": "vim::ResizePaneUp",
+      "ctrl-down": "vim::ResizePaneDown",
+      "ctrl-left": "vim::ResizePaneLeft",
+      "ctrl-right": "vim::ResizePaneRight",
     },
   },
   {
