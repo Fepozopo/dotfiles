@@ -9,6 +9,7 @@
   {
     "bindings": {
       "alt-`": "editor::ToggleFocus",
+
       // Ctrl jklk to move between panes
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
@@ -36,6 +37,8 @@
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
+      "enter": ["workspace::SendKeystrokes", "o escape k"],
+      "shift-enter": ["workspace::SendKeystrokes", "O escape j"],
     },
   },
   {
