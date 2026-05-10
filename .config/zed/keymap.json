@@ -9,7 +9,6 @@
   {
     "bindings": {
       "alt-`": "editor::ToggleFocus",
-
       // Ctrl jklk to move between panes
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
