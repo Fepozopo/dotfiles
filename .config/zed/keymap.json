@@ -8,7 +8,6 @@
 [
   {
     "bindings": {
-      "alt-`": "editor::ToggleFocus",
       // Ctrl jklk to move between panes
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
@@ -44,6 +43,13 @@
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
       // visual, visual line & visual block modes
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert && !VimWaiting && !menu",
+    "bindings": {
+      // insert mode
+      "alt-`": "editor::ShowEditPrediction",
     },
   },
   // Which key
