@@ -30,6 +30,7 @@
       ],
       "g z": "vim::HelixJumpToWord",
       "g '": "git::Diff",
+      "alt-]": "editor::ShowEditPrediction",
     },
   },
   {
@@ -50,7 +51,6 @@
     "context": "Editor && vim_mode == insert && !VimWaiting && !menu",
     "bindings": {
       // only insert mode
-      "alt-`": "editor::ShowEditPrediction",
     },
   },
   // Which key
