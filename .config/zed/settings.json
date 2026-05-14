@@ -39,6 +39,7 @@
   "vertical_scroll_margin": 7,
   "relative_line_numbers": "enabled",
   "format_on_save": "on",
+  "completion_menu_item_kind": "symbol",
   "diff_view_style": "unified",
   "sticky_scroll": {
     "enabled": true,
@@ -82,7 +83,7 @@
     "single_file_review": true,
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "model": "gpt-5.4-mini",
       "enable_thinking": true,
       "effort": "high",
     },
@@ -108,7 +109,7 @@
   },
   "show_edit_predictions": true,
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "copilot",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
