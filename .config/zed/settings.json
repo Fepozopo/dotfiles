@@ -118,7 +118,7 @@
   },
   "agent_servers": {
     "pi-acp": {
-      "type": "registry"
+      "type": "registry",
     },
     "gemini": {
       "type": "registry",
