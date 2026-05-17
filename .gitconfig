@@ -2,6 +2,7 @@
 	name = Shane DuPrey
 	email = 36708583+Fepozopo@users.noreply.github.com
 [core]
-	editor = nvim
+		editor = nvim
+		pager = hunk pager
 [init]
 	defaultBranch = main
