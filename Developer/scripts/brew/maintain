@@ -7,6 +7,7 @@ brew update
 # Upgrade any installed packages
 echo "Upgrading installed packages..."
 brew upgrade
+brew upgrade --cask
 
 # Remove formulae that were installed as dependencies but are no longer actively used
 # or required by any other installed software
