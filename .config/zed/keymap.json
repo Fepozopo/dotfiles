@@ -21,7 +21,18 @@
     },
   },
   {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // Put key bindings here (in addition to the context below) if you want them to
+      // work when no editor exists.
+      "space f": [
+        "task::Spawn",
+        { "task_name": "Television File Finder", "reveal_target": "center" },
+      ],
+    },
+  },
+  {
+    "context": "VimControl && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
       "space f": [
@@ -34,7 +45,7 @@
     },
   },
   {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "context": "vim_mode == normal && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
       "enter": ["workspace::SendKeystrokes", "o escape k"],
@@ -42,17 +53,20 @@
     },
   },
   {
-    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "context": "vim_mode == visual && !menu",
     "bindings": {
-      // visual, visual line & visual block modes
+      // put key-bindings here if you want them to work only in visual mode
+      "shift-s": "vim::PushAddSurrounds",
     },
   },
   {
-    "context": "Editor && vim_mode == insert && !VimWaiting && !menu",
+    "context": "vim_mode == insert",
     "bindings": {
-      // only insert mode
+      // put key-bindings here if you want them to work only in insert mode
+      "alt-]": "editor::ShowEditPrediction",
     },
   },
+
   // Which key
   {
     "context": "(VimControl && !menu)",
@@ -61,4 +75,32 @@
       "ctrl-w": null,
     },
   },
+
+  // move up or down a visual line instead of a complete line in markdown and text files
+  {
+    "context": "VimControl && !menu && (extension == md || extension == txt)",
+    "bindings": {
+      "j": ["workspace::SendKeystrokes", "g j"],
+      "down": ["workspace::SendKeystrokes", "g j"],
+      "k": ["workspace::SendKeystrokes", "g k"],
+      "up": ["workspace::SendKeystrokes", "g k"],
+    },
+  },
+
+  // for Windows and Linux
+  // {
+  //   "context": "Editor && !menu",
+  //   "bindings": {
+  //     "ctrl-f": "buffer_search::Deploy",      // vim default: page down
+  //     "ctrl-c": "editor::Copy",               // vim default: return to normal mode
+  //     "ctrl-x": "editor::Cut",                // vim default: decrement
+  //     "ctrl-v": "editor::Paste",              // vim default: visual block mode
+  //     "ctrl-a": "editor::SelectAll",          // vim default: increment
+  //     "ctrl-y": "editor::Undo",               // vim default: line up
+  //     "ctrl-t": "project_symbols::Toggle",    // vim default: go to older tag
+  //     "ctrl-o": "workspace::Open",            // vim default: go back
+  //     "ctrl-s": "workspace::Save",            // vim default: show signature
+  //     "ctrl-b": "workspace::ToggleLeftDock"   // vim default: down
+  //   }
+  // },
 ]
