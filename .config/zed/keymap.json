@@ -66,18 +66,16 @@
       "alt-]": "editor::ShowEditPrediction",
     },
   },
-
-  // Which key
   {
+    // Which key
     "context": "(VimControl && !menu)",
     "bindings": {
       "space": null, // Disable the default action vim::WrappingRight
       "ctrl-w": null,
     },
   },
-
-  // move up or down a visual line instead of a complete line in markdown and text files
   {
+    // move up or down a visual line instead of a complete line in markdown and text files
     "context": "VimControl && !menu && (extension == md || extension == txt)",
     "bindings": {
       "j": ["workspace::SendKeystrokes", "g j"],
