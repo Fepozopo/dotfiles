@@ -1,11 +1,13 @@
 ---
 description: Generate conventional commit message(s) from staged changes
 agent: plan
-model: github-copilot/gpt-5-mini
+model: openai/gpt-5.4-mini
 ---
+
 Review the current Git staged changes and produce one or more clear, high-quality commit message(s) for those changes.
 
 Required steps:
+
 - Inspect staged files and diffs (e.g. run `git diff --staged --name-only` and `git diff --staged`).
 - Group changes into logical commits. If changes are unrelated, produce multiple commit messages (one per logical change). If they belong together, produce a single commit message.
 - Follow the Conventional Commits format for each message:
@@ -16,6 +18,7 @@ Required steps:
   - Footer (optional): include `BREAKING CHANGE:` or issue references like `Fixes #123`.
 
 Output rules:
+
 - If a single commit is appropriate: output ONLY the commit message text (header, blank line, body, optional footer). Do NOT include file lists, diff excerpts, or extra commentary.
 - If multiple commits are appropriate: output each commit message separated by a single line containing three hyphens (`---`). Each commit must follow the format above. Do NOT include extra commentary.
 - If context is unclear: include a one-line note beginning with `NOTE:` describing what you couldn't determine, followed by the commit message(s).
