@@ -122,7 +122,10 @@
       "tools": {
         "terminal": {
           "always_deny": [{ "pattern": "git\\s+(add|commit)" }],
-          "always_allow": [{ "pattern": "go\\s+(build|fmt|test|vet)" }],
+          "always_allow": [
+            { "pattern": "go\\s+(build|fmt|test|vet)" },
+            { "pattern": "gofmt" },
+          ],
         },
       },
     },
