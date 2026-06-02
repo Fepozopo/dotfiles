@@ -101,7 +101,7 @@
     "model_parameters": [],
     "single_file_review": true,
     "default_model": {
-      "provider": "copilot_chat",
+      "provider": "openai-subscribed",
       "model": "gpt-5.4",
       "enable_thinking": true,
       "effort": "high",
@@ -125,6 +125,7 @@
           "always_allow": [
             { "pattern": "go\\s+(build|fmt|test|vet)" },
             { "pattern": "gofmt" },
+            { "pattern": "grep" },
           ],
         },
       },
