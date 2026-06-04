@@ -44,7 +44,7 @@ SCR_COMPS=(
   psql/start
   psql/stop
 )
-_scr() {
+function _scr() {
   # Provide the static completions defined above
   compadd -a SCR_COMPS
 }

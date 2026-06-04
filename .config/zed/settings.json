@@ -102,7 +102,7 @@
     "single_file_review": true,
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4",
+      "model": "gpt-5.4-mini",
       "enable_thinking": true,
       "effort": "high",
     },
@@ -126,6 +126,7 @@
             { "pattern": "go\\s+(build|fmt|test|vet)" },
             { "pattern": "gofmt" },
             { "pattern": "grep" },
+            { "pattern": "find" },
           ],
         },
       },

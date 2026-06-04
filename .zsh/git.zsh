@@ -1,5 +1,5 @@
 # Function to show Git branch/status on the left
-git_prompt_info() {
+function git_prompt_info() {
   # If inside a Git repo…
   if git rev-parse --is-inside-work-tree &>/dev/null; then
     # branch name

@@ -10,7 +10,7 @@ PROMPT_SECOND='$(git_prompt_info)%(?.. %B%F{red}(%?%)%f) %(?.%F{green}➜ .%F{re
 # Build a two-line prompt where:
 #  - top line: connector + full path + a horizontal rule that fills the terminal
 #  - bottom line: connector + the second-line prompt content
-build_two_line_prompt() {
+function build_two_line_prompt() {
   # printable path (no color escapes) used to compute widths
   local raw_path=$(print -Pn "%~")
 
@@ -48,7 +48,7 @@ build_two_line_prompt() {
 precmd_functions+=(build_two_line_prompt)
 
 # TRAPWINCH: handle terminal resizes so the two-line prompt keeps its layout.
-TRAPWINCH() {
+function TRAPWINCH() {
   emulate -L zsh
 
   # Update LINES and COLUMNS in a robust way
@@ -77,7 +77,7 @@ TRAPWINCH() {
 
 # Use diff --color if available
 if command diff --color /dev/null{,} &>/dev/null; then
-  function diff {
+  function diff() {
     command diff --color "$@"
   }
 fi
@@ -101,7 +101,7 @@ if [[ -z "$LS_COLORS" ]]; then
   fi
 fi
 
-function test-ls-args {
+function test-ls-args() {
   local cmd="$1"          # ls, gls, colorls, ...
   local args="${@[2,-1]}" # arguments except the first one
   command "$cmd" "$args" /dev/null &>/dev/null

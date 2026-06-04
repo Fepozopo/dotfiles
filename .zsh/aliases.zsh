@@ -27,10 +27,10 @@ alias ...="cd ../.."
 alias gth="cd ~"
 alias gtd="cd ~/Downloads"
 alias gtc="cd ~/.config"
-gtt() {
+function gtt() {
     cd "${TMPDIR}"
 }
-gtg() {
+function gtg() {
   cd ~/Developer/workspace/github.com/Fepozopo/
 }
 
@@ -47,7 +47,7 @@ alias venv-a="source venv/bin/activate"
 alias venv-d="deactivate"
 
 # Alias to simplify use of Python UV
-uv-i() {
+function uv-i() {
 	uv init
 	uv venv
 }
@@ -55,7 +55,7 @@ alias uv-a="source .venv/bin/activate"
 alias uv-d="deactivate"
 
 # Alias for common git commands
-"gfs"() {
+function gfs() {
     git fetch
     git status
 }
@@ -73,30 +73,30 @@ alias gl="git log --oneline --graph --decorate"
 # Disk usage human readable and summary for the current directory
 alias dus="du -hs"
 # Disk usage for directories AND files in human readable format with the grand total, sorted by size
-duf() {
+function duf() {
     du -ahc "${1}" | sort -h
 }
 # Disk usage human readable with the grand total, for a specific directory recursively up to a specified depth, sorted by size
-dur() {
+function dur() {
     du -hc -d "${1}" "${2}" | sort -h
 }
 
 # Create a directory and cd into it
-mkcd() {
+function mkcd() {
     mkdir -p "${1}"
     cd "${1}"
 }
 # Create a directory and a file within
-mktouch() {
+function mktouch() {
 	mkdir -p "${1}"
 	touch "${1}/${2}"
 }
 
 # Move a file to and from the downloads folder
-mvtd() {
+function mvtd() {
     mv "${1}" ~/Downloads/
 }
-mvfd() {
+function mvfd() {
     mv ~/Downloads/"${1}" .
 }
 
