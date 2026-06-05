@@ -102,13 +102,13 @@
     "single_file_review": true,
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-5.4",
       "enable_thinking": true,
       "effort": "high",
     },
     "inline_assistant_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-5.4",
       "enable_thinking": true,
       "effort": "high",
     },
