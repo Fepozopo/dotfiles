@@ -100,16 +100,21 @@
     "default_profile": "write",
     "model_parameters": [],
     "single_file_review": true,
+    "auto_compact": {
+      "enabled": true,
+      "threshold": "90%",
+    },
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.5",
+      "model": "gpt-5.4",
       "enable_thinking": true,
-      "effort": "medium",
+      "effort": "high",
     },
     "inline_assistant_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
-      "enable_thinking": false,
+      "model": "gpt-5.4",
+      "enable_thinking": true,
+      "effort": "high",
     },
     "commit_message_model": {
       "provider": "openai-subscribed",
