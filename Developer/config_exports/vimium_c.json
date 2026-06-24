@@ -1,14 +1,16 @@
 {
 	"name": "Vimium C",
-	"@time": "11/9/2025, 11:50:40 AM",
-	"time": 1762717840746,
+	"@time": "6/23/2026, 6:25:01 PM",
+	"time": 1782264301932,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "mac",
-		"chromium": 144
+		"chromium": 151
 	},
 	"allBrowserUrls": true,
+	"autoDarkMode": 1,
 	"exclusionRules": [],
+	"filterLinkHints": true,
 	"keyLayout": 18,
 	"keyMappings": [
 		"#!no-check",
