@@ -5,7 +5,7 @@ tap "jstkdng/programs", trusted: true
 tap "libsql/sqld", trusted: true
 tap "modem-dev/tap", trusted: true
 tap "nikitabobko/tap", trusted: true
-tap "sst/tap", trusted: true
+tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
 tap "tursodatabase/tap", trusted: true
 # Command-line interface for SQLite
 brew "sqlite"
@@ -132,8 +132,6 @@ cask "appcleaner"
 cask "bitwarden"
 # Send any size file between devices
 cask "blip"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 # Drivers for DisplayLink docks, adapters and monitors
 cask "displaylink"
 # App to build and share containerised applications and microservices
