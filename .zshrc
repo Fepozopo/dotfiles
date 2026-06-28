@@ -4,6 +4,7 @@
 # zmodload zsh/zprof
 
 # Path exports
+export PATH="/Users/fepozopo/.local/bin:$PATH"
 export PATH=$PATH:$HOME/go/bin
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PATH="$HOME/Developer/scripts:$PATH" # Export for custom scripts
