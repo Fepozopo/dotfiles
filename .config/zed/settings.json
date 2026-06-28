@@ -138,6 +138,13 @@
       },
     },
   },
+  "context_servers": {
+    "codebase-memory-mcp": {
+      "command": "/Users/fepozopo/.local/bin/codebase-memory-mcp",
+      "args": [""],
+    },
+  },
+  "agent_servers": {},
   "show_edit_predictions": true,
   "edit_predictions": {
     "provider": "copilot",
@@ -147,7 +154,6 @@
       "proxy_no_verify": null,
     },
   },
-  "agent_servers": {},
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
