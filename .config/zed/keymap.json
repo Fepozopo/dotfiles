@@ -25,10 +25,11 @@
     "bindings": {
       // Put key bindings here (in addition to the context below) if you want them to
       // work when no editor exists.
-      "space f f": [
+      "space f v": [
         "task::Spawn",
         { "task_name": "Television File Finder", "reveal_target": "center" },
       ],
+      "space f f": "file_finder::Toggle",
       "space f t": "text_finder::Toggle",
       "space f p": "pane::DeploySearch",
     },
@@ -37,10 +38,11 @@
     "context": "VimControl && !menu",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
-      "space f f": [
+      "space f v": [
         "task::Spawn",
         { "task_name": "Television File Finder", "reveal_target": "center" },
       ],
+      "space f f": "file_finder::Toggle",
       "space f t": "text_finder::Toggle",
       "space f p": "pane::DeploySearch",
       "g z": "vim::HelixJumpToWord",
