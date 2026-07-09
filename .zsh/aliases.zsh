@@ -8,9 +8,11 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 # General aliases
 alias src="source ~/.zshrc"
 
-# Automatically add the verbose flag to commands
+# Aliases for file operations
 alias rm="rm -v"
+alias rmr="rm -vr"
 alias cp="cp -v"
+alias cpr="cp -vr"
 alias mv="mv -v"
 
 # Aliases for ls
