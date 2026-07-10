@@ -7,6 +7,7 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 
 # General aliases
 alias src="source ~/.zshrc"
+alias oc="opencode"
 
 # Aliases for file operations
 alias rm="rm -v"
