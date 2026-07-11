@@ -67,6 +67,10 @@ brew "mole"
 brew "utf8proc"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Programming language with focus on simplicity, performance and modern systems
+brew "odin"
+# Language server for The Odin Programming Language
+brew "ols"
 # AI agent toolkit
 brew "pi-coding-agent"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -194,6 +198,7 @@ vscode "vscodevim.vim"
 vscode "vue.volar"
 vscode "ziglang.vscode-zig"
 go "github.com/bootdotdev/bootdev"
+go "github.com/go-delve/delve/cmd/dlv"
 go "graphics.gd/cmd/gd"
 go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"
