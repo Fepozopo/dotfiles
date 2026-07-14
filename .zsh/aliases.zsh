@@ -12,6 +12,7 @@ alias oc="opencode"
 # Aliases for file operations
 alias rm="rm -v"
 alias rmr="rm -vr"
+alias rmrf="rm -vrf"
 alias cp="cp -v"
 alias cpr="cp -vr"
 alias mv="mv -v"
