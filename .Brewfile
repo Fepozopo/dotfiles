@@ -63,6 +63,8 @@ brew "lsd"
 brew "make"
 # Deep clean and optimize your Mac
 brew "mole"
+# Implementation of the Vulkan graphics and compute API on top of Metal
+brew "molten-vk"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -107,6 +109,10 @@ brew "uv"
 brew "vale"
 # Terminal spreadsheet multitool for discovering and arranging data
 brew "visidata"
+# Vulkan Header files and API registry
+brew "vulkan-headers"
+# Vulkan utilities and tools
+brew "vulkan-tools"
 # Internet file retriever
 brew "wget"
 # Why is this running?
@@ -201,6 +207,7 @@ go "github.com/bootdotdev/bootdev"
 go "github.com/go-delve/delve/cmd/dlv"
 go "graphics.gd/cmd/gd"
 go "golang.org/x/tools/cmd/goimports"
+go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
 go "golang.org/x/tools/gopls"
 go "github.com/maaslalani/sheets"
 go "solod.dev/cmd/so"
