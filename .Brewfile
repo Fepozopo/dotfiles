@@ -49,6 +49,8 @@ brew "goose"
 brew "gosec"
 # Post-modern modal text editor
 brew "helix"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -95,6 +97,8 @@ brew "sevenzip"
 brew "sqlc"
 # State of the art linter for the Go programming language
 brew "staticcheck"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # General purpose fuzzy finder TUI
 brew "television"
 # Parser generator tool
