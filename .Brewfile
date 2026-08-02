@@ -51,6 +51,8 @@ brew "gosec"
 brew "helix"
 # Agent multiplexer that lives in your terminal
 brew "herdr"
+# Review-first terminal diff viewer for agent-authored changesets
+brew "hunk"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -67,6 +69,8 @@ brew "make"
 brew "mole"
 # Implementation of the Vulkan graphics and compute API on top of Metal
 brew "molten-vk"
+# Remote terminal application
+brew "mosh"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -135,8 +139,6 @@ brew "zoxide"
 brew "zsh-fast-syntax-highlighting"
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode"
-# Desktop-inspired terminal diff viewer for agent-authored changesets
-brew "modem-dev/tap/hunk"
 brew "tursodatabase/tap/turso"
 # Image editing and design software
 cask "affinity"
