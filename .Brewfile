@@ -29,6 +29,8 @@ brew "cmake"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl3"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -148,6 +150,12 @@ cask "appcleaner"
 cask "bitwarden"
 # Send any size file between devices
 cask "blip"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
 # Drivers for DisplayLink docks, adapters and monitors
 cask "displaylink"
 # App to build and share containerised applications and microservices
@@ -169,6 +177,8 @@ cask "microsoft-edge@canary"
 cask "nvidia-geforce-now"
 # Document editor
 cask "onlyoffice"
+# Client program for the OpenVPN Access Server
+cask "openvpn-connect"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Control your tools with a few keystrokes
