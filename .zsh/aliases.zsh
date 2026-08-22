@@ -9,6 +9,21 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 alias src="source ~/.zshrc"
 alias oc="opencode"
 
+# Copy AGENTS.md to various locations
+function cpa() {
+    cp ~/AGENTS.md ~/.config/zed/AGENTS.md
+    cp ~/AGENTS.md ~/.pi/agent/APPEND_SYSTEM.md
+    cp ~/AGENTS.md ~/.config/opencode/AGENTS.md
+    cp ~/AGENTS.md ~/.fx/AGENTS.md
+}
+
+# Alias to open Visual Studio Code Insiders
+alias code="code-insiders"
+
+# Lazygit and Lazydocker alias
+alias lzg="lazygit"
+alias lzd="lazydocker"
+
 # Aliases for file operations
 alias rm="rm -v"
 alias rmr="rm -vr"
@@ -37,13 +52,6 @@ function gtt() {
 function gtg() {
   cd ~/Developer/workspace/github.com/Fepozopo/
 }
-
-# Alias to open Visual Studio Code Insiders
-alias code="code-insiders"
-
-# Lazygit and Lazydocker alias
-alias lzg="lazygit"
-alias lzd="lazydocker"
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
 alias venv-i="python3 -m venv venv"
