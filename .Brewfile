@@ -97,6 +97,8 @@ brew "ripgrep"
 brew "ripgrep-all"
 # Safe, concurrent, practical language
 brew "rust"
+# Library for using TrueType fonts in SDL applications
+brew "sdl3_ttf"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
 # Generate type safe Go from SQL
@@ -193,8 +195,6 @@ cask "webull"
 cask "whisky"
 # Connect to Windows
 cask "windows-app"
-# Voice-to-text dictation with AI-powered auto-editing
-cask "wispr-flow"
 # Multiplayer code editor
 cask "zed@preview"
 vscode "catppuccin.catppuccin-vsc"
