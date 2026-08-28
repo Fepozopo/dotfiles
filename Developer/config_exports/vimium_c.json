@@ -1,15 +1,20 @@
 {
 	"name": "Vimium C",
-	"@time": "6/23/2026, 6:25:01 PM",
-	"time": 1782264301932,
+	"@time": "8/27/2026, 6:45:21 PM",
+	"time": 1787881521533,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "mac",
-		"chromium": 151
+		"chromium": 154
 	},
 	"allBrowserUrls": true,
 	"autoDarkMode": 1,
-	"exclusionRules": [],
+	"exclusionRules": [
+		{
+			"passKeys": "<esc> ",
+			"pattern": ":https://www.boot.dev/"
+		}
+	],
 	"filterLinkHints": true,
 	"keyLayout": 18,
 	"keyMappings": [
