@@ -3,7 +3,6 @@ tap "charmbracelet/tap", trusted: true
 tap "homebrew/bundle"
 tap "jstkdng/programs", trusted: true
 tap "libsql/sqld", trusted: true
-tap "modem-dev/tap", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
 tap "tursodatabase/tap", trusted: true
