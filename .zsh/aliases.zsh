@@ -11,10 +11,10 @@ alias oc="opencode"
 
 # Copy AGENTS.md to various locations
 function cpa() {
-    cp -v ~/AGENTS.md ~/.config/zed/AGENTS.md
-    cp -v ~/AGENTS.md ~/.pi/agent/APPEND_SYSTEM.md
-    cp -v ~/AGENTS.md ~/.config/opencode/AGENTS.md
-    cp -v ~/AGENTS.md ~/.fx/AGENTS.md
+    cp -v ~/Developer/AGENTS.md ~/.config/zed/AGENTS.md
+    cp -v ~/Developer/AGENTS.md ~/.pi/agent/APPEND_SYSTEM.md
+    cp -v ~/Developer/AGENTS.md ~/.config/opencode/AGENTS.md
+    cp -v ~/Developer/AGENTS.md ~/.fx/AGENTS.md
 }
 
 # Alias to open Visual Studio Code Insiders
