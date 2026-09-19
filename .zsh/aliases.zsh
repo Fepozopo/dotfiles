@@ -10,7 +10,7 @@ alias src="source ~/.zshrc"
 alias oc="opencode"
 
 # Copy AGENTS.md to various locations
-function cpa() {
+function cpai() {
     cp -v ~/Developer/AGENTS.md ~/.config/zed/AGENTS.md
     cp -v ~/Developer/AGENTS.md ~/.pi/agent/APPEND_SYSTEM.md
     cp -v ~/Developer/AGENTS.md ~/.config/opencode/AGENTS.md
