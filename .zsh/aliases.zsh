@@ -7,7 +7,7 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 
 # General aliases
 alias src="source ~/.zshrc"
-alias oc="opencode"
+alias opc="opencode"
 
 # Copy AGENTS.md to various locations
 function cpai() {
@@ -46,6 +46,10 @@ alias ...="cd ../.."
 alias gth="cd ~"
 alias gtd="cd ~/Downloads"
 alias gtc="cd ~/.config"
+alias gtpi="cd ~/.pi"
+alias gtfx="cd ~/.fx"
+alias gtzed="cd ~/.config/zed"
+alias gtopc="cd ~/.config/opencode"
 function gtt() {
     cd "${TMPDIR}"
 }
