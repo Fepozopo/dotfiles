@@ -4,7 +4,8 @@
     "attribution": {
       "trailer_style": "none",
       "generated_with": false
-    }
+    },
+    "context_paths": ["/Users/fepozopo/.config/crush/codebase-memory.md"]
   },
   "permissions": {
     "allowed_tools": [
@@ -12,5 +13,8 @@
       "ls",
       "grep"
     ]
+  },
+  "mcp": {
+    "codebase-memory-mcp": {"command":"/Users/fepozopo/.local/bin/codebase-memory-mcp","args":[],"type":"stdio"}
   }
 }
