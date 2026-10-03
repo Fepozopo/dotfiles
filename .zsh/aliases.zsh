@@ -7,14 +7,13 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 
 # General aliases
 alias src="source ~/.zshrc"
-alias opc="opencode"
+alias oc="opencode"
 
 # Copy AGENTS.md to various locations
-function cpai() {
+function cpagts() {
     cp -v ~/AGTS.md ~/.config/zed/AGENTS.md
     cp -v ~/AGTS.md ~/.pi/agent/APPEND_SYSTEM.md
     cp -v ~/AGTS.md ~/.config/opencode/AGENTS.md
-    cp -v ~/AGTS.md ~/.fx/AGENTS.md
 }
 
 # Alias to open Visual Studio Code Insiders
@@ -43,18 +42,15 @@ alias lsla="lsd -la"
 # Navigation aliases
 alias ..="cd .."
 alias ...="cd ../.."
-alias gth="cd ~"
-alias gtd="cd ~/Downloads"
-alias gtc="cd ~/.config"
-alias gtpi="cd ~/.pi"
-alias gtfx="cd ~/.fx"
-alias gtzed="cd ~/.config/zed"
-alias gtopc="cd ~/.config/opencode"
-function gtt() {
+alias cddl="cd ~/Downloads"
+alias cdcfg="cd ~/.config"
+alias cddev="cd ~/Developer"
+alias cdg="cd ~/Developer/workspace/github.com/Fepozopo"
+alias cdpi="cd ~/.pi"
+alias cdz="cd ~/.config/zed"
+alias cdoc="cd ~/.config/opencode"
+function cdtmp() {
     cd "${TMPDIR}"
-}
-function gtg() {
-  cd ~/Developer/workspace/github.com/Fepozopo/
 }
 
 # Alias to make it easier to create/activate/deactivate a Python virtual environment
@@ -85,6 +81,9 @@ alias gpo="git push origin"
 alias gpl="git pull"
 alias gplo="git pull origin"
 alias gl="git log --oneline --graph --decorate"
+
+# Alias to install/update Codebase Memory MCP
+alias cbm-i="curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash"
 
 # Disk usage human readable and summary for the current directory
 alias dus="du -hs"
