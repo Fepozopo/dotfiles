@@ -16,9 +16,6 @@ function cpagts() {
     cp -v ~/AGTS.md ~/.config/opencode/AGENTS.md
 }
 
-# Alias to open Visual Studio Code Insiders
-alias code="code-insiders"
-
 # Lazygit and Lazydocker alias
 alias lzg="lazygit"
 alias lzd="lazydocker"
@@ -82,9 +79,6 @@ alias gpl="git pull"
 alias gplo="git pull origin"
 alias gl="git log --oneline --graph --decorate"
 
-# Alias to install/update Codebase Memory MCP
-alias cbm-i="curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash"
-
 # Disk usage human readable and summary for the current directory
 alias dus="du -hs"
 # Disk usage for directories AND files in human readable format with the grand total, sorted by size
@@ -114,6 +108,10 @@ function mvtd() {
 function mvfd() {
     mv ~/Downloads/"${1}" .
 }
+
+# Alias for codebase-memory-mcp
+alias cbm="codebase-memory-mcp"
+alias cbm-u="codebase-memory-mcp update"
 
 # Shell wraper that provides the ability to change the current working
 # directory when exiting Yazi
