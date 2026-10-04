@@ -32,6 +32,8 @@ brew "fd"
 brew "sdl3"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Tiny, open, embeddable, native coding agent
+brew "fx-agent"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU compiler collection
@@ -186,8 +188,6 @@ cask "pgadmin4"
 cask "raycast"
 # Music streaming service
 cask "spotify"
-# Open-source code editor
-cask "visual-studio-code@insiders"
 # Desktop client for Webull Financial LLC
 cask "webull"
 # Wine wrapper built with SwiftUI
@@ -196,28 +196,6 @@ cask "whisky"
 cask "windows-app"
 # Multiplayer code editor
 cask "zed@preview"
-vscode "catppuccin.catppuccin-vsc"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "charliermarsh.ruff"
-vscode "docker.docker"
-vscode "github.vscode-github-actions"
-vscode "github.vscode-pull-request-github"
-vscode "golang.go"
-vscode "gruntfuggly.todo-tree"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-ossdata.vscode-pgsql"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-vscode-remote.remote-wsl"
-vscode "ms-vscode.vscode-speech"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "ritwickdey.liveserver"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "vscodevim.vim"
-vscode "vue.volar"
-vscode "ziglang.vscode-zig"
 go "github.com/bootdotdev/bootdev"
 go "github.com/go-delve/delve/cmd/dlv"
 go "graphics.gd/cmd/gd"
