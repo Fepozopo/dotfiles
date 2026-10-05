@@ -14,6 +14,7 @@ function cpagts() {
     cp -v ~/AGTS.md ~/.config/zed/AGENTS.md
     cp -v ~/AGTS.md ~/.pi/agent/APPEND_SYSTEM.md
     cp -v ~/AGTS.md ~/.config/opencode/AGENTS.md
+    cp -v ~/AGTS.md ~/.fx/AGENTS.md
 }
 
 # Lazygit and Lazydocker alias
