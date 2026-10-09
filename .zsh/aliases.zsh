@@ -97,17 +97,15 @@ function mkcd() {
     cd "${1}"
 }
 # Create a directory and a file within
-function mktouch() {
+function mktch() {
 	mkdir -p "${1}"
 	touch "${1}/${2}"
 }
 
-# Move a file to and from the downloads folder
-function mvtd() {
-    mv "${1}" ~/Downloads/
-}
-function mvfd() {
-    mv ~/Downloads/"${1}" .
+# Move one or more paths to the Downloads folder; pass globs like `folder/*` as arguments.
+function mvdl() {
+    (( $# )) || return 1
+    mv -- "$@" ~/Downloads/
 }
 
 # Alias for codebase-memory-mcp
