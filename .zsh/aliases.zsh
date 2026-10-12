@@ -8,6 +8,7 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 # General aliases
 alias src="source ~/.zshrc"
 alias oc="opencode"
+alias ocm="opencode mini"
 
 # Copy AGENTS.md to various locations
 function cpagts() {
