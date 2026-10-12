@@ -48,6 +48,7 @@ alias cdg="cd ~/Developer/workspace/github.com/Fepozopo"
 alias cdpi="cd ~/.pi"
 alias cdz="cd ~/.config/zed"
 alias cdoc="cd ~/.config/opencode"
+alias cdfx="cd ~/.fx"
 function cdtmp() {
     cd "${TMPDIR}"
 }
