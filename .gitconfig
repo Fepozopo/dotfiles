@@ -6,3 +6,5 @@
 		pager = hunk pager
 [init]
 	defaultBranch = main
+[pull]
+	rebase = false
