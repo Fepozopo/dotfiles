@@ -6,8 +6,6 @@ tap "libsql/sqld", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
 tap "tursodatabase/tap", trusted: true
-# Native desktop automation CLI for AI agents
-brew "agent-desktop"
 # Command-line interface for SQLite
 brew "sqlite"
 # Official Amazon AWS command-line interface
