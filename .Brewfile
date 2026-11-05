@@ -6,10 +6,10 @@ tap "libsql/sqld", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git", trusted: true
 tap "tursodatabase/tap", trusted: true
+# Native desktop automation CLI for AI agents
+brew "agent-desktop"
 # Command-line interface for SQLite
 brew "sqlite"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -32,6 +32,8 @@ brew "fd"
 brew "sdl3"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Programmer's text editor
+brew "flow-control"
 # Tiny, open, embeddable, native coding agent
 brew "fx-agent"
 # Command-line fuzzy finder written in Go
@@ -92,6 +94,8 @@ brew "postgresql@17", link: true
 brew "python@3.13"
 # Python interface to Tcl/Tk
 brew "python-tk@3.13"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Wrapper around ripgrep that adds multiple rich file types
@@ -138,12 +142,14 @@ brew "yazi"
 brew "yt-dlp"
 # Programming language designed for robustness, optimality, and clarity
 brew "zig"
+# Language Server for Zig
+brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode"
+# OpenCode V2 - the AI coding agent for the terminal
+brew "anomalyco/tap/opencode-v2", trusted: true
 brew "tursodatabase/tap/turso"
 # Image editing and design software
 cask "affinity"
