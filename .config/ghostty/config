@@ -7,6 +7,10 @@
 
 font-size = 13
 
+# cursor style
+cursor-style = block
+cursor-style-blink = true
+
 # ghostty +list-fonts
 font-family = JetBrainsMono Nerd Font Mono
 
