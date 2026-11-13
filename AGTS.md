@@ -15,10 +15,14 @@ Before editing, understand the affected flow and check whether existing
 code, the standard library, native platform features, or installed
 dependencies already solve it.
 
-- Build only what the task requires. Avoid speculative abstractions, flexibility, boilerplate, and unnecessary dependencies.
-- Avoid magic values. Name any literal whose meaning is not obvious at the call site.
-- Never sacrifice correctness or readability to reduce line count or diff size.
-- Suggest a simpler approach when it meets the same requirements.
+- **Build only what the task requires:** Avoid speculative abstractions, flexibility, boilerplate, and unnecessary dependencies.
+- **Prefer simplicity over defensive abstractions:** Choose clear, direct solutions instead of layering speculative guards, wrappers, and fallback paths.
+- **Trust existing safeguards:** Verify what the type system, compiler, runtime, database constraints, or upstream boundaries already enforce before adding new checks.
+- **Do not architect around one-off incidents:** Resolve isolated anomalies at their root cause rather than converting rare edge cases into permanent architectural requirements.
+- **Eliminate redundant validations and dead code:** Actively detect and remove duplicate checks, unreachable branches, and unnecessary defensive logic when writing or refactoring.
+- **Avoid magic values:** Name any literal whose meaning is not obvious at the call site.
+- **Preserve correctness and readability:** Never sacrifice clarity or correctness just to reduce line count or diff size.
+- **Suggest a simpler approach** whenever it meets the same requirements.
 
 ## Code Documentation and Commenting Requirements
 
