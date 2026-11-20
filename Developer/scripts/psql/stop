@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # Stop PostgreSQL server using Homebrew
-# Stops the PostgreSQL server and configures it to run as a background service
-brew services stop postgresql@17
+# Stops the PostgreSQL server
+brew services stop postgresql@19

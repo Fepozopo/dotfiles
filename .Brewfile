@@ -87,7 +87,7 @@ brew "pi-coding-agent"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Object-relational database system
-brew "postgresql@17", link: true
+brew "postgresql@19", link: true
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
 # Python interface to Tcl/Tk
@@ -176,6 +176,8 @@ cask "font-symbols-only-nerd-font"
 cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
+cask "google-chrome@canary"
 # Game launcher
 cask "heroic"
 # Multi-platform web browser
@@ -209,4 +211,3 @@ go "golang.org/x/tools/gopls"
 go "github.com/maaslalani/sheets"
 go "solod.dev/cmd/so"
 go "honnef.co/go/tools/cmd/staticcheck"
-go "github.com/Fepozopo/timp/cmd/timp"
