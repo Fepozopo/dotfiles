@@ -7,8 +7,6 @@ alias dfpom="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push origi
 
 # General aliases
 alias src="source ~/.zshrc"
-alias oc="opencode"
-alias ocm="opencode mini"
 
 # Copy AGENTS.md to various locations
 function cpagts() {
@@ -21,6 +19,13 @@ function cpagts() {
 # Lazygit and Lazydocker alias
 alias lzg="lazygit"
 alias lzd="lazydocker"
+
+# OpenCode aliases
+alias oc="opencode"
+alias ocm="opencode mini"
+alias ocs="opencode service status"
+alias ocsu="opencode service start"
+alias ocsd="opencode service stop"
 
 # Aliases for file operations
 alias rm="rm -v"
